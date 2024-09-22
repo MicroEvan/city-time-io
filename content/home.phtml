@@ -1,0 +1,59 @@
+<div class="container">
+    <form id="conversionForm">
+        <div class="row">
+            <div class="input-field col s12">
+                <label for="timepicker">Select Time</label>
+                <input type="text" id="timepicker" class="timepicker" required>
+            </div>
+        </div>
+
+            <table class="striped">
+                <thead>
+                <tr>
+                    <th>Source City</th>
+                    <th>Target City</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                    <td>
+                        <select id="sourceCity" required>
+                            <option value="" disabled selected >Select</option>
+                            <option value="America/New_York">New York</option>
+                            <option value="Europe/London">London</option>
+                            <option value="Asia/Tokyo">Tokyo</option>
+                            <option value="Australia/Sydney">Sydney</option>
+                            <option value="Europe/Paris">Paris</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="targetCity" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="America/New_York">New York</option>
+                            <option value="Europe/London">London</option>
+                            <option value="Asia/Tokyo">Tokyo</option>
+                            <option value="Australia/Sydney">Sydney</option>
+                            <option value="Europe/Paris">Paris</option>
+                        </select>
+                    </td>
+                </tbody>
+            </table>
+<br>
+        <button type="submit" class="btn" id= "convertButton" style="margin-right: 10px; padding: 0px 5px;">Convert</button>
+        <button type="button" class="btn swap-button" id= "swapButton">Swap</button>
+    </form>
+
+    <h2></h2>
+    <div class="datetime-container">
+        <div class="datetime">
+            <div class="time">
+                <p id="convertedTime"></p>
+            </div>
+        </div>
+    </div>
+    <div class="progress">
+      <div class="indeterminate"></div>
+    </div>
+    <button type="button" class="btn" id="resetButton">Reset</button>
+
+</div>
